@@ -1,105 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All in one games</title>
-    <style>
-/* Reset default styles */
-/* Reset default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Set default font family and size */
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-}
-
-/* Set a background color and add padding to the body */
-body {
-  background-color: #f5f5f5;
-  padding: 20px;
-}
-a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Style the main heading */
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: bold;
-}
-
-/* Style the game buttons */
-ul {
-  display: flex;
-  justify-content: flex-start; /* Move buttons to the left */
-  margin-bottom: 20px;
-  list-style: none; /* Remove bullets from the list */
-}
-
-button {
-  border: none;
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  margin-right: 10px; /* Add some space between buttons */
-  border-radius: 5px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: #0062cc;
-}
-
-/* Add responsive styles for different screen sizes */
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 28px;
-  }
-  
-  button {
-    font-size: 20px;
-    padding: 8px 16px;
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  h1 {
-    font-size: 24px;
-  }
-  
-  button {
-    font-size: 18px;
-    padding: 6px 12px;
-  }
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="index.css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  <title>All in one games</title>        
 </head>
 <body>
+  <div id="game-stack">
     <h1>Welcome! Here You Can Play Different Games.</h1>
-    <ul><button><a href="Snake.html">Snake Game</a></button></ul>
-    <p>In this classic arcade-style game, you control a snake that grows longer as it eats food. Avoid running into walls or your own tail!</p>
-    <ul><button><a href="TicTacToe.html">Tic Tac Toe</a></button></ul>
-    <p>This two-player game is easy to learn but challenging to master. Get three in a row to win!</p>
-    <ul><button><a href="Hungman.html">Hungman</a></button></ul>
-    <p>Guess the hidden word by selecting letters. But be careful, every incorrect guess brings you one step closer to being "hanged"!</p>
-    <ul><button><a href="Memory.html">Memory Match</a></button></ul>
-    <p>Test your memory with this card-matching game. Flip over cards to find pairs and clear the board!</p>
-    <ul><button><a href="Minesweeper.html">Minesweeper</a></button></ul>
-    <p>In this classic puzzle game, clear the board by revealing all tiles that do not contain mines. But be careful, one wrong move could set off a chain reaction!</p>
+    <div class="stack-list">
+      <div>
+        <ul><button><a href="#">Snake Game</a></button></ul>
+        <p>In this classic arcade-style game, you control a snake that grows longer as it eats food. Avoid running into walls or your own tail!</p>
+      </div>
+      <div>
+        <ul><button><a href="#">Tic Tac Toe</a></button></ul>
+        <p>This two-player game is easy to learn but challenging to master. Get three in a row to win!</p>
+      </div>
+      <div>
+        <ul><button><a href="#">Hungman</a></button></ul>
+        <p>Guess the hidden word by selecting letters. But be careful, every incorrect guess brings you one step closer to being "hanged"!</p>
+      </div>
+      <div>
+        <ul><button><a href="#">Memory Match</a></button></ul>
+        <p>Test your memory with this card-matching game. Flip over cards to find pairs and clear the board</p>
+      </div>
+      <div>
+        <ul><button><a href="#">Minesweeper</a></button></ul>
+        <p>In this classic puzzle game, clear the board by revealing all tiles that do not contain mines. But be careful, one wrong move could set off a chain reaction!</p>
+      </div>
+    </div>
+  </div>  
 </body>
 <script>
   const words = ["javascript", "html", "css", "react", "nodejs", "mongodb", "bootstrap"];
