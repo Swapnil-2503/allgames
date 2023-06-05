@@ -46,7 +46,7 @@ h1 {
 .stack-list div{
   background: #262626;
   padding: 40px;
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
