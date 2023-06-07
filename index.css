@@ -44,33 +44,60 @@ h1 {
 }
 
 .stack-list div{
+  position: relative;
   background: #262626;
-  padding: 40px;
+  padding: 0;
   font-size: 18px;
   font-weight: 300;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
-}
-.stack-list div ul {
-  display: flex;
-  justify-content: flex-start;
-  border: 5px #262626;
-  
-  /* Move buttons to the left */
+  overflow: hidden;
   margin-bottom: 20px;
-  list-style: none;
-  /* Remove bullets from the list */
 }
+.stack-list div .image-container {
+  position: relative;
+}
+.stack-list div .image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.stack-list div .text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s;
+}
+.stack-list div:hover .text-container {
+  visibility: visible;
+  opacity: 1;
+}
+
+.stack-list div .button-container {
+  margin-top: 10px;
+  text-align: center;
+}
+
 .stack-list div ul button {
-  border: 5px #262626;
+  order: 5px solid #262626;
   padding: 10px 20px;
-  margin-right: 10px;
   border-radius: 5px;
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  background-color: #ff004f;
+  color: white;
 }
 
 .stack-list div ul button:hover {
@@ -79,6 +106,12 @@ h1 {
 .stack-list div:hover{
   background: #ff004f;
   transform: translateY(-10px);
+}
+.stack-list div:hover .block-text {
+  visibility: visible;
+}
+.block-text {
+  visibility: hidden;
 }
 
 
@@ -124,5 +157,6 @@ h1 {
   margin: 0 auto;
   }
 }
+
 
 
